@@ -1,0 +1,26 @@
+{
+  "name": "aide-de-camp",
+  "version": "1.0.0",
+  "description": "An app that generates quality README.md files for projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaderiver62/aide-de-camp.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "README.md"
+  ],
+  "author": "Nina Cummings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaderiver62/aide-de-camp/issues"
+  },
+  "homepage": "https://github.com/jaderiver62/aide-de-camp#readme"
+}
