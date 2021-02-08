@@ -82,6 +82,12 @@ const questions = [{
 
     },
     {
+        type: 'checkbox',
+        name: 'languages',
+        message: 'What did you write this project with? (Check all that apply)',
+        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+    },
+    {
         type: 'input',
         name: 'usage',
         message: 'Provide instructions and examples for this project\s use: ',
