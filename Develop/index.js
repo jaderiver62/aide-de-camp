@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
+var validator = require("email-validator");
 
 
 //TODO: Include packages needed
@@ -78,38 +79,76 @@ const questions = [{
         message: 'Would you like to include a Table of Contents? ',
     },
     {
-        type: 'confirm',
-        name: 'installQuery',
-        message: 'Would you like to add the steps required to install your project? ',
-        default: true
+        type: 'editor',
+        name: 'installation',
+        message: 'Please provide any installation information you wish to include: '
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Choose a license for this project: ',
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
 
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for this project\s use: ',
+
+    },
+    {
+        type: 'input',
+        name: 'imageUrl',
+        message: 'Add an image/screenshot URL to help with usage: '
+    },
+    {
+        type: 'input',
+        name: 'contactName',
+        message: 'Please enter a contact name for questions users have about your project: ',
+        validate: nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('You need to enter a contact name!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter a valid email for the contact name: ',
+        validate: emailInput => {
+            if (validator.validate(emailInput)) {
+                return true;
+            } else {
+                console.log('You need to enter a valid contact e-mail!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'editor',
+        name: 'test',
+        message: 'Please provide any testing information you wish to include: '
     },
     {
         type: 'loop',
-        name: 'installItems',
-        message: 'Add an installation step? ',
-        when: ({ installQuery }) => installQuery,
+        name: 'credits',
+        message: 'Add a contributor? ',
         questions: [{
                 type: "input",
-                name: "step",
-                message: "Enter an installation step title: ",
+                name: "contributor",
+                message: "Enter the contributor's name: ",
             },
             {
                 type: "input",
-                name: "stepDescription",
-                message: "Enter the description of this installation step: ",
+                name: "contributorLink",
+                message: "Enter the contributor's link: ",
             },
         ],
     },
-    {
-        type: 'confirm',
-        name: 'usage',
-        message: 'Would you like to provide instructions and examples for this project\s use? ',
-        default: true
-    },
-
 ];
-
 
 inquirer.prompt(questions).then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
