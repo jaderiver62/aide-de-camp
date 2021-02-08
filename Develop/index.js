@@ -2,8 +2,8 @@ const inquirer = require("inquirer");
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 var validator = require("email-validator");
 const fs = require('fs');
-const { writeFile, copyFile } = require('./src/generateMarkdown');
-const generateREADME = require('./src/markdown-template');
+/*const { writeFile, copyFile } = require('./src/generateMarkdown');*/
+/*const generateREADME = require('./src/markdown-template');*/
 
 const questions = [{
         type: 'input',
@@ -142,14 +142,45 @@ const questions = [{
     },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    console.log(JSON.stringify(answers, null, '  '));
-});
 
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
 
-// // // TODO: Create a function to initialize app
-// // function init() {}
+            resolve({
+                ok: true,
+                message: 'File created!'
+            });
+        });
+    });
+}
 
-// // // Function call to initialize app
-// // init();
+
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+            var data = JSON.stringify(answers, null, '  ');
+            console.log(data);
+            return data;
+        })
+        .then(thisMarkdown => {
+            return writeToFile('./README.md', thisMarkdown);
+        }).then(writeFileResponse => {
+            console.log(writeFileResponse);
+        })
+        .catch(err => {
+            console.log(err);
+
+        });
+}
+
+init();
+
+
+
+/*.then(projectData => {
+                   return generateMarkdown(projectData);
+               })*/
