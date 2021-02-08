@@ -75,7 +75,7 @@ const questions = [{
         message: 'Please provide any installation information you wish to include: '
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Choose a license for this project: ',
         choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
