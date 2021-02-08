@@ -1,18 +1,10 @@
 const inquirer = require("inquirer");
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 var validator = require("email-validator");
+const fs = require('fs');
+const { writeFile, copyFile } = require('./src/generateMarkdown');
+const generateREADME = require('./src/markdown-template');
 
-
-//TODO: Include packages needed
-//for this application
-
-
-//const fs = require('fs');
-//const { writeFile, copyFile } = require('./src/generateMarkdown');
-//const generateREADME = require('./src/markdown-template');
-//Develop / index.js
-//TODO: Create an array of questions
-//for user input
 const questions = [{
         type: 'input',
         name: 'name',
@@ -154,31 +146,10 @@ inquirer.prompt(questions).then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
 });
 
-// // THEN a high-quality, professional README.md is generated with the title of my project and sections
-// // entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-
-// // // TODO: Create a function to write README file
-// // function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {}
 
 // // // TODO: Create a function to initialize app
 // // function init() {}
 
 // // // Function call to initialize app
 // // init();
-
-//inquirer.prompt({
-//    type: "loop",
-//    name: "items",
-//    message: "Add another item?",
-//    questions: [{
-//            type: "input",
-//            name: "key",
-//            message: "Enter item key",
-//        },
-//        {
-//            type: "input",
-//            name: "value",
-//            message: "Enter item value",
-//        },
-//    ],
-//});
