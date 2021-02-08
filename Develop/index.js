@@ -2,8 +2,7 @@ const inquirer = require("inquirer");
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 var validator = require("email-validator");
 const fs = require('fs');
-/*const { writeFile, copyFile } = require('./src/generateMarkdown');*/
-/*const generateREADME = require('./src/markdown-template');*/
+const generateREADME = require('./utils/generateMarkdown.js');
 
 const questions = [{
         type: 'input',
@@ -165,6 +164,8 @@ function init() {
             var data = JSON.stringify(answers, null, '  ');
             console.log(data);
             return data;
+        }).then(projectData => {
+            return generateREADME(projectData);
         })
         .then(thisMarkdown => {
             return writeToFile('./README.md', thisMarkdown);
@@ -181,6 +182,4 @@ init();
 
 
 
-/*.then(projectData => {
-                   return generateMarkdown(projectData);
-               })*/
+/**/
