@@ -103,10 +103,28 @@ const questions = [{
     },
     {
         type: 'confirm',
-        name: 'usage',
+        name: 'confirmUsage',
         message: 'Would you like to provide instructions and examples for this project\s use? ',
         default: true
     },
+    {
+        type: 'editor',
+        name: 'usage',
+        message: 'Enter instructions for usage: ',
+        when: ({ confirmUsage }) => confirmUsage
+    },
+    {
+        type: 'confirm',
+        name: 'imageUrlConfirm',
+        message: 'Would you like to add an image or screenshot to help with usage? ',
+        when: ({ confirmUsage }) => confirmUsage
+    },
+    {
+        type: 'input',
+        name: 'imageUrl',
+        message: 'Enter image URL: ',
+        when: ({ imageUrlConfirm }) => imageUrlConfirm
+    }
 
 ];
 
