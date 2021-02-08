@@ -142,14 +142,28 @@ const questions = [{
     },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    console.log(JSON.stringify(answers, null, '  '));
-});
 
 function writeToFile(fileName, data) {}
 
-// // // TODO: Create a function to initialize app
-// // function init() {}
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+            var data = JSON.stringify(answers, null, '  ');
+            console.log(data);
+            return data;
+        }).then(projectData => {
+            return generateMarkdown(projectData);
+        }).then(thisMarkdown => {
+            return writeToFile(thisMarkdown);
+        }).then(writeFileResponse => {
+            console.log(writeFileResponse);
+            return copyFile();
+        })
+        .then(copyFileResponse => {
+            console.log(copyFileResponse);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+}
 
-// // // Function call to initialize app
-// // init();
+init();
