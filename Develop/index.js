@@ -143,7 +143,22 @@ const questions = [{
 ];
 
 
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: 'File created!'
+            });
+        });
+    });
+}
+
 
 function init() {
     inquirer.prompt(questions).then((answers) => {
@@ -153,16 +168,14 @@ function init() {
         }).then(projectData => {
             return generateMarkdown(projectData);
         }).then(thisMarkdown => {
-            return writeToFile(thisMarkdown);
+            return writeToFile('./README.md', thisMarkdown);
         }).then(writeFileResponse => {
             console.log(writeFileResponse);
             return copyFile();
         })
-        .then(copyFileResponse => {
-            console.log(copyFileResponse);
-        })
         .catch(err => {
             console.log(err);
+
         });
 }
 
