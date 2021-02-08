@@ -78,17 +78,20 @@ const questions = [{
         message: 'Would you like to include a Table of Contents? ',
     },
     {
-        type: 'confirm',
-        name: 'installQuery',
-        message: 'Would you like to add the steps required to install your project? ',
-        default: true
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for this project\s use? ',
 
+    },
+    {
+        type: 'input',
+        name: 'imageUrl',
+        message: 'Add an image or screenshot to help with usage: '
     },
     {
         type: 'loop',
         name: 'installItems',
         message: 'Add an installation step? ',
-        when: ({ installQuery }) => installQuery,
         questions: [{
                 type: "input",
                 name: "step",
@@ -101,33 +104,7 @@ const questions = [{
             },
         ],
     },
-    {
-        type: 'confirm',
-        name: 'confirmUsage',
-        message: 'Would you like to provide instructions and examples for this project\s use? ',
-        default: true
-    },
-    {
-        type: 'editor',
-        name: 'usage',
-        message: 'Enter instructions for usage: ',
-        when: ({ confirmUsage }) => confirmUsage
-    },
-    {
-        type: 'confirm',
-        name: 'imageUrlConfirm',
-        message: 'Would you like to add an image or screenshot to help with usage? ',
-        when: ({ confirmUsage }) => confirmUsage
-    },
-    {
-        type: 'input',
-        name: 'imageUrl',
-        message: 'Enter image URL: ',
-        when: ({ imageUrlConfirm }) => imageUrlConfirm
-    }
-
 ];
-
 
 inquirer.prompt(questions).then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
