@@ -2,8 +2,8 @@ const inquirer = require("inquirer");
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 var validator = require("email-validator");
 const fs = require('fs');
-const { writeFile, copyFile } = require('./src/generateMarkdown');
-const generateREADME = require('./src/markdown-template');
+/*const { writeFile, copyFile } = require('./src/generateMarkdown');*/
+/*const generateREADME = require('./src/markdown-template');*/
 
 const questions = [{
         type: 'input',
@@ -165,13 +165,11 @@ function init() {
             var data = JSON.stringify(answers, null, '  ');
             console.log(data);
             return data;
-        }).then(projectData => {
-            return generateMarkdown(projectData);
-        }).then(thisMarkdown => {
+        })
+        .then(thisMarkdown => {
             return writeToFile('./README.md', thisMarkdown);
         }).then(writeFileResponse => {
             console.log(writeFileResponse);
-            return copyFile();
         })
         .catch(err => {
             console.log(err);
@@ -180,3 +178,9 @@ function init() {
 }
 
 init();
+
+
+
+/*.then(projectData => {
+                   return generateMarkdown(projectData);
+               })*/
