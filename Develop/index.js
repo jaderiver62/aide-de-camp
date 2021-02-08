@@ -15,92 +15,98 @@ inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 const questions = [{
         type: 'input',
         name: 'name',
-        message: 'Who is the creator of this project? (Required)',
+        message: 'Who is the creator of this project? (Required) ',
         validate: nameInput => {
             if (nameInput) {
                 return true;
             }
-            console.log('Please enter a name!');
+            console.log('Please enter a name! ');
             return false;
         }
     },
     {
         type: 'input',
         name: 'title',
-        message: 'What is the project\'s title? (Required)',
+        message: 'What is the project\'s title? (Required) ',
         validate: nameInput => {
             if (nameInput) {
                 return true;
             }
-            console.log('Please enter a title!');
+            console.log('Please enter a title! ');
             return false;
         }
     },
     {
         type: 'input',
         name: 'github',
-        message: 'Enter this project\'s GitHub Username (Required)',
+        message: 'Enter this project\'s GitHub Username (Required) ',
         validate: githubInput => {
             if (githubInput) {
                 return true;
             }
-            console.log('Please enter a GitHub username!');
+            console.log('Please enter a GitHub username! ');
             return false;
         }
     },
     {
         type: 'input',
         name: 'link',
-        message: 'Enter the GitHub link to the project: (Required)',
+        message: 'Enter the GitHub link to the project: (Required) ',
         validate: linkInput => {
             if (linkInput) {
                 return true;
             }
-            console.log('You need to enter a project GitHub link!');
+            console.log('You need to enter a project GitHub link! ');
             return false;
         }
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'description',
-        message: 'Provide some information about this project for the README:',
+        message: 'Please provide some information about this project for the README: ',
         validate: descriptionInput => {
             if (descriptionInput) {
                 return true;
             }
-            console.log('Please enter some description of the project!');
+            console.log('Please enter some description of the project! ');
             return false;
         }
     },
     {
         type: 'confirm',
-        name: 'table-of-contents',
-        message: 'Would you like to include a Table of Contents?',
+        name: 'tableOfContents',
+        message: 'Would you like to include a Table of Contents? ',
     },
     {
         type: 'confirm',
         name: 'installQuery',
-        message: 'Would you like to include installation information?',
+        message: 'Would you like to add the steps required to install your project? ',
         default: true
 
     },
     {
         type: 'loop',
         name: 'installItems',
-        message: 'Add an installation step?',
+        message: 'Add an installation step? ',
         when: ({ installQuery }) => installQuery,
         questions: [{
                 type: "input",
                 name: "step",
-                message: "Enter an installation step title:",
+                message: "Enter an installation step title: ",
             },
             {
                 type: "input",
                 name: "stepDescription",
-                message: "Enter the description of this installation step:",
+                message: "Enter the description of this installation step: ",
             },
         ],
-    }
+    },
+    {
+        type: 'confirm',
+        name: 'usage',
+        message: 'Would you like to provide instructions and examples for this project\s use? ',
+        default: true
+    },
 
 ];
 
