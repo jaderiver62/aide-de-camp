@@ -16,7 +16,7 @@ Using aide-de-camp ensures that the project's README.md looks great and is not a
 
 * Project Link: [jaderiver62](https://github.com/jaderiver62/aide-de-camp)
 
-
+---------------------------------------
 
 ## Table of Contents
 
