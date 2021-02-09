@@ -39,11 +39,12 @@ const generateContributors = credits => {
 function generateMarkdown(projectData) {
     console.log(projectData);
     var output =
-        `# ${projectData.title}
-    ## Description
-    ${projectData.description}
+        `
+# ${projectData.title}
+## Description
+${projectData.description}
+[${projectData.github}](${projectData.link})`;
 
-   ![${projectData.github}](${projectData.link})`;
     output += `${generateTableOfContents(projectData.tableOfContents)}`;
 
     //output += `## Installation
