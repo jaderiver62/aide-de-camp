@@ -29,7 +29,7 @@ const generateContributors = credits => {
     }
     for (var i = 0; i < credits.length; i++) {
         result += `
-        ![${projectData.contributor}](${projectData.contributorLink})
+        ![${credits.contributor}](${credits.contributorLink})
         `;
     }
     return result;
@@ -50,17 +50,18 @@ ${projectData.description}
 
     output += `${generateTableOfContents(projectData.tableOfContents)}`;
 
-    //output += `## Installation
-    //${projectData.installation}
+    output += `
+## Installation
+${projectData.installation}
 
-    //## Usage 
-    //${projectData.usage}
-    //![Project Usage Image](${projectData.imageUrl})
-    //`;
+## Usage 
+${projectData.usage}
+![Project Usage Image](${projectData.imageUrl})
+`;
 
-    //output += `
-    //${generateContributors(projectData.credits)}
-    //`;
+    output += `
+${generateContributors(projectData.credits)}
+ `;
     return output;
 }
 
