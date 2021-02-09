@@ -43,7 +43,7 @@ const questions = [{
     {
         type: 'input',
         name: 'link',
-        message: 'Enter the GitHub link to the project: (Required) ',
+        message: 'Enter a link to the project: (Required) ',
         validate: linkInput => {
             if (linkInput) {
                 return true;

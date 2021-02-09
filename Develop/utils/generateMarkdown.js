@@ -43,11 +43,13 @@ const generateTableOfContents = tableOfContents => {
     }
     return `
 ## Table of Contents
+---------------------------------------
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Testing](#testing)
 * [Credits](#credits)
+
 `
 }
 
@@ -58,12 +60,17 @@ function generateMarkdown(projectData) {
     return `
 # ${projectData.title}
 
+license badges here: TO-DO
+
 ## Description
 
 ${projectData.description}
 
-Created by ${projectData.name}
-Git Hub: [${projectData.github}](${projectData.link})
+---------------------------------------
+
+* Project Link: [${projectData.github}](${projectData.link})
+
+
 ${generateTableOfContents(projectData.tableOfContents)}
 
 Written using:
@@ -79,10 +86,10 @@ ${projectData.installation}
 ${projectData.usage}
 
 ![Project Usage Image](${projectData.imageUrl})
-    
-## License
 
-${projectData.license}
+---------------------------------------
+
+
 
 ## Testing
 
@@ -92,6 +99,13 @@ ${projectData.test}
 
 ${generateContributors(projectData.credits)} 
 
+
+## Licence
+
+This project is licensed under the ${projectData.license}.
+&copy; 
+
+---------------------------------------
     `;
 }
 

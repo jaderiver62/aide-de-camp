@@ -1,14 +1,20 @@
 
-# aide-de-camp
+# Aide de Camp
+
+license badges here: TO-DO
 
 ## Description
 
-This is an app that creates a quality README.md file for projects.  Phasellus consequat eu orci at mollis. Integer a bibendum lectus, non tincidunt urna. Aliquam scelerisque eleifend sem, consectetur fringilla mi auctor ac. Aliquam sem nunc, interdum non viverra id, scelerisque vel quam. Morbi egestas risus vel purus vehicula sagittis. Ut congue sapien quam, et suscipit enim tempor nec. Vestibulum ac metus vel magna accumsan suscipit. Fusce tempor diam ut lectus fringilla sagittis. Aenean luctus cursus lacus sed rutrum. Mauris facilisis felis a condimentum dignissim. Nullam tortor justo, varius non nisi id, molestie gravida odio.
+This is an app that generates a quality README.md document for projects using Inquirer in the command line.  There are many options for input possible, whether the README.md is long or concise.  Using aide-de-camp ensures that the project's README.md looks great and is not at all anemic!  Over time, the options will be enhanced and improved even more, so please see the questions section for our contact information if you encounter any bugs, have any questions at all or input as to how the UI can be made more helpful.
 
-Created by Nina Cummings
-Git Hub: [jaderiver62](https://github.com/jaderiver62/aide-de-camp)
+---------------------------------------
+
+* Project Link: [jaderiver62](https://github.com/jaderiver62/aide-de-camp)
+
+
 
 ## Table of Contents
+---------------------------------------
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -16,23 +22,38 @@ Git Hub: [jaderiver62](https://github.com/jaderiver62/aide-de-camp)
 * [Credits](#credits)
 
 
+
+Written using:
+
+* JavaScript
+
+
+* ES6
+
+
+* Node
+
+
+
+
 ## Installation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta semper massa, sit amet fringilla libero maximus a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam convallis tellus nec risus vehicula tincidunt. Pellentesque malesuada aliquam elit, ac pellentesque purus. Ut vehicula felis et eleifend facilisis. Mauris vestibulum mi euismod, vulputate diam eget, ullamcorper ante. Nulla tincidunt ipsum velit, et ultricies nibh posuere id. Fusce efficitur lacus in nibh euismod auctor. Suspendisse ornare purus nec placerat sodales. Donec eu bibendum mauris. Praesent quis enim eget purus rutrum congue eu sed lacus. Cras vel hendrerit turpis. Curabitur iaculis, velit eget consequat interdum, neque nulla lobortis quam, in pretium ligula libero ac tortor.
+Our project is quite to install at the moment.  You must have Node.js - (https://nodejs.org/)  and npm- (https://www.npmjs.com/) installed to use aide-de-camp.  For future endeavors aide-de-camp plans to publish a package on npm that makes this process even easier.
 
 ## Usage
 
-In posuere erat eu pharetra venenatis. Curabitur vel risus ut risus pretium pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sed elit egestas, scelerisque lacus ac, pretium arcu. Sed quis felis sed sem lobortis suscipit. Aenean rhoncus ante sed tempor sagittis. Aliquam eros ex, imperdiet sit amet urna at, tempor tempus justo.
+Clone the repository, and open it in your IDE.  Using aide-de-camp is very straight-forward.  Once you have the cloned the files, in the command line navigate to the cloned aide-de-camp folder.  Once there, enter ' node Develop/index ' to run the code.  You will be prompted with a series of questions, some are required and some are optional – but when you are done a new README.md file will be generated in the aide-de-camp folder.  This README.md file can be copied and placed in your project folder and even altered further if you wish – but for now, the majority of the work will be done!   NOTE: this will replace the aide-de-camp README.md file, but you can still access this at our GitHub: https://github.com/jaderiver62/aide-de-camp
 
-![Project Usage Image](Develop/utils/tests/images/nuggles.jpg)
-    
-## License
+![Project Usage Image](Develop/utils/tests/images/screenshot1.jpg)
+![Project Usage Image](Develop/utils/tests/images/screenshot2.jpg)
 
-MIT License
+---------------------------------------
+
+
 
 ## Testing
 
-Aliquam tellus quam, lacinia non interdum sed, ultricies id mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum rhoncus auctor aliquam. Vivamus in enim a est viverra fermentum a eu ipsum. Mauris vitae aliquam dolor. Etiam in mollis ex, nec aliquam neque. Curabitur vestibulum libero at cursus pellentesque. Sed luctus viverra ex sed placerat. Suspendisse hendrerit velit ut ex posuere, blandit fringilla nulla venenatis. Nulla pharetra laoreet justo eget consectetur. Sed congue elementum velit non imperdiet. Morbi condimentum tempor enim eu pharetra.
+Included within the aide-de-camp files is a tester folder.  To test out input, first navigate to the aide-de-camp files in the command line and enter: ' node Develop/utils/tests/sample.js '.  the object created by your input should print in the console log, along with the created Markdown code for the newly created README.md file.
 
 ## Credits
 
@@ -41,7 +62,22 @@ Aliquam tellus quam, lacinia non interdum sed, ultricies id mi. Interdum et male
 
 * [Jadoo the Cat](https://github.com/jaderiver62/)
 
-* [Cat Mistress](https://github.com/jaderiver62/)
+* [inquirer](https://github.com/SBoudrias/Inquirer.js/)
+
+* [inquirer-loop](https://github.com/ckoliber/inquirer-loop)
+
+* [npm]((https://www)
+
+* [node.js](https://nodejs.org/)
+
+* [GitHub](https://github.com/)
  
 
+
+## Licence
+
+This project is licensed under the MIT License.
+&copy; 
+
+---------------------------------------
     
