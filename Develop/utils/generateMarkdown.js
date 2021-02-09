@@ -47,15 +47,7 @@ ${projectData.description}
 [${projectData.github}](${projectData.link})
 ${generateTableOfContents(projectData.tableOfContents)}
 ## Installation
-
-## Usage
-
-${projectData.usage}
-![Project Usage Image](${projectData.imageUrl})
-    
-## Credits
-${generateContributors(projectData.credits)} 
-    `;
+`;
 }
 
 module.exports = generateMarkdown;
