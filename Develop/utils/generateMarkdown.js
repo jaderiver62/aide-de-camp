@@ -46,7 +46,7 @@ ${projectData.description}
 
 
 
-- [${projectData.github}](${projectData.link})`;
+** [${projectData.github}](${projectData.link})`;
 
     output += `${generateTableOfContents(projectData.tableOfContents)}`;
 
