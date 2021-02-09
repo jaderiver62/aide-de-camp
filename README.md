@@ -68,7 +68,7 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 
 * [Nuggles the Cat](Develop/utils/tests/images/nuggles.jpg)
 
-* [Jadoo the Cat]((Develop/utils/tests/images/jadoo.jpg)
+* [Jadoo the Cat](Develop/utils/tests/images/jadoo.jpg)
 
 * [inquirer](https://github.com/SBoudrias/Inquirer.js/)
 
