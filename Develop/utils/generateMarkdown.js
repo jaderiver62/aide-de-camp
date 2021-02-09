@@ -17,7 +17,7 @@ const generateContributors = credits => {
         const contributor = credits[i].contributor;
         const link = credits[i].contributorLink;
         result += `
-[${contributor}](${link})
+* [${contributor}](${link})
 `;
     }
     return result;
@@ -31,6 +31,7 @@ const generateTableOfContents = tableOfContents => {
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Testing](#testing)
 * [Credits](#credits)
 `
 }
@@ -41,20 +42,37 @@ function generateMarkdown(projectData) {
     console.log(projectData);
     return `
 # ${projectData.title}
+
 ## Description
+
 ${projectData.description}
 
-[${projectData.github}](${projectData.link})
+Created by ${projectData.name}
+Git Hub: [${projectData.github}](${projectData.link})
 ${generateTableOfContents(projectData.tableOfContents)}
+
 ## Installation
+
+${projectData.installation}
 
 ## Usage
 
 ${projectData.usage}
+
 ![Project Usage Image](${projectData.imageUrl})
     
+## License
+
+${projectData.license}
+
+## Testing
+
+${projectData.test}
+
 ## Credits
+
 ${generateContributors(projectData.credits)} 
+
     `;
 }
 
