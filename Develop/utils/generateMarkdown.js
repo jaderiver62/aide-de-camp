@@ -9,6 +9,15 @@ function renderLicenseLink(license) {}
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
+const generatecontributors = credits => {
+    var result =
+        ``;
+    for (var i = 0; i < credits.length; i++) {
+        result += `![${credits[i].contributor}](${credits[i].contributorLink})
+    `;
+    }
+    return result;
+};
 
 const generateTableOfContents = tableOfContents => {
     if (!tableOfContents) {
@@ -27,34 +36,27 @@ const generateTableOfContents = tableOfContents => {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(projectData) {
     console.log(projectData);
-    var output =
-        `
+    return `
 # ${projectData.title}
 ## Description
 ${projectData.description}
+}
 
 
+[${projectData.github}](${projectData.link})
 
-[${projectData.github}](${projectData.link})`;
-
-    output += `${generateTableOfContents(projectData.tableOfContents)}`;
-
-    output += `## Installation
+${generateTableOfContents(projectData.tableOfContents)}
+## Installation
 ${projectData.installation}
 
-## Usage 
+## Usage
 ${projectData.usage}
-![Project Usage Image](${projectData.imageUrl})
-    `;
 
-    var result = ``;
-    for (var i = 0; i < projectData.credits.length; i++) {
-        result += `
-![${projectData.credits[i].contributor}](${projectData.credits[i].contributorLink})
-        `;
-    }
-    output += result;
-    return output;
+![Project Usage Image](${projectData.imageUrl})
+    
+## Credits
+${generateCredits(projectData.credits)}
+    `;
 }
 
 module.exports = generateMarkdown;

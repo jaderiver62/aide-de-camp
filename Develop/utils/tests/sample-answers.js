@@ -3,7 +3,7 @@ module.exports = {
     title: 'aide-de-camp',
     github: 'jaderiver64',
     link: 'https://github.com/jaderiver62/aide-de-camp',
-    description: 'This is an app in Node.js that creates a quality README.md file for projects!This is still a work in progess so please forgive my tests.  Watch this space!',
+    description: 'This is an app in Node.js that creates a quality README.md file for projects!This is still a work in progess so please forgive my tests. Watch this space!',
     tableOfContents: true,
     installation: 'installation steps to be provided soon!',
     license: 'MIT License',
