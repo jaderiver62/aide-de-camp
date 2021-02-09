@@ -46,17 +46,17 @@ function generateMarkdown(projectData) {
    ![${projectData.github}](${projectData.link})`;
     output += `${generateTableOfContents(projectData.tableOfContents)}`;
 
-    output += `## Installation
-    ${projectData.installation}
-    
-    ## Usage 
-    ${projectData.usage}
-    ![Project Usage Image](${projectData.imageUrl})
-    `;
+    //output += `## Installation
+    //${projectData.installation}
 
-    output += `
-    ${generateContributors(projectData.credits)}
-    `;
+    //## Usage 
+    //${projectData.usage}
+    //![Project Usage Image](${projectData.imageUrl})
+    //`;
+
+    //output += `
+    //${generateContributors(projectData.credits)}
+    //`;
     return output;
 }
 
