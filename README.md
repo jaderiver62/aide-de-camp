@@ -1,7 +1,12 @@
 
+<<<<<<< HEAD
 # Aide de Camp
 
 license badges here: TO-DO
+=======
+# aide-de-camp
+---------------------------------------
+>>>>>>> 297b8c14ff50b90a9d6bea2daea53428712e1e00
 
 ## Description
 
@@ -73,6 +78,7 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 * [GitHub](https://github.com/)
  
 
+<<<<<<< HEAD
 
 ## Licence
 
@@ -81,3 +87,6 @@ This project is licensed under the MIT License.
 
 ---------------------------------------
     
+=======
+    
+>>>>>>> 297b8c14ff50b90a9d6bea2daea53428712e1e00
