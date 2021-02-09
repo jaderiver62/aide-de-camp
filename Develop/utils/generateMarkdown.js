@@ -13,12 +13,12 @@ const generateContributors = credits => {
     var result =
         ``;
     for (var i = 0; i < credits.length; i++) {
-        result += `![${credits[i].contributor}](${credits[i].contributorLink})
-    `;
+        result += `
+[` + credits[i].contributor + `]` + `(` + credits[i].contributorLink + `)
+`;
     }
     return result;
 };
-
 const generateTableOfContents = tableOfContents => {
     if (!tableOfContents) {
         return ``;
@@ -41,17 +41,12 @@ function generateMarkdown(projectData) {
 ## Description
 ${projectData.description}
 }
-
-
 [${projectData.github}](${projectData.link})
-
 ${generateTableOfContents(projectData.tableOfContents)}
 ## Installation
 ${projectData.installation}
-
 ## Usage
 ${projectData.usage}
-
 ![Project Usage Image](${projectData.imageUrl})
     
 ## Credits
