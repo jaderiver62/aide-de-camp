@@ -54,7 +54,7 @@ Clone the repository, and open it in your IDE.  Using aide-de-camp is very strai
 
 ![Project Usage Image](Develop/utils/tests/images/screenshot1.jpg)
 
-![Project Usage Image](Develop/utils/tests/images/screenshot1.jpg)
+![Project Usage Image](Develop/utils/tests/images/screenshot2.jpg)
 
 ---------------------------------------
 
