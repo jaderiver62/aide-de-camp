@@ -11,14 +11,43 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-//function generateMarkdown(projectData) {
+function generateMarkdown(projectData) {
+    console.log(projectData);
+    return `
+    # ${projectData.title}
+    ## Description
+    ${projectData.description}
 
-//}
+    [projectData.github](projectData.link)
 
-//module.exports = generateMarkdown;
-module.exports = templateData => {
-    console.log(templateData);
-    return `# ${templateData.title}
+
 
 `;
 }
+
+module.exports = generateMarkdown;
+//module.exports = templateData => {
+
+
+
+//{
+//    "name": "nina",
+//    "title": "meow",
+//    "github": "meow",
+//    "link": "meow",
+//    "description": "dope",
+//    "tableOfContents": true,
+//    "installation": "meows",
+//    "license": [
+//        "GNU AGPLv3"
+//    ],
+//    "usage": "meow",
+//    "imageUrl": "meow",
+//    "contactName": "meow",
+//    "email": "jaderiver64@gmail.com",
+//    "test": "meow",
+//    "credits": [{
+//        "contributor": "nuggles",
+//        "contributorLink": "https://nugglesworld.com"
+//    }]
+//}
