@@ -1,7 +1,7 @@
 const moment = require("moment");
 
 function generateDate() {
-    return moment().format("L");
+    return moment().format();
 
 } // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -118,7 +118,7 @@ ${generateContributors(projectData.credits)}
 
 This project is licensed under the ${projectData.license}.
 
-&copy; ${projectData.name} ${generateDate()}
+&copy; ${projectData.name} ${generateDate}
 
 ---------------------------------------
 
