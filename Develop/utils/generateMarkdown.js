@@ -48,7 +48,6 @@ ${projectData.description}
 ${generateTableOfContents(projectData.tableOfContents)}
 ## Installation
 
-${projectData.installation}
 ## Usage
 
 ${projectData.usage}

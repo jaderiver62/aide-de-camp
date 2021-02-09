@@ -3,4 +3,6 @@ const sampleAnswers = require('./sample-answers');
 
 console.log(generateTest(sampleAnswers));
 /* 
+
+${projectData.installation}
  */
