@@ -18,7 +18,6 @@ const generateLanguages = (languageArray) => {
         const language = languageArray[i];
         result += `
 * ${language}
-
 `;
     }
     return result;
@@ -68,7 +67,8 @@ ${projectData.description}
 
 ---------------------------------------
 
-* Project Link: [${projectData.github}](${projectData.link})
+* Project Link: 
+[${projectData.linkName}](${projectData.link})
 
 
 ${generateTableOfContents(projectData.tableOfContents)}

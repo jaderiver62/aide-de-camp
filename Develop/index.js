@@ -30,25 +30,25 @@ const questions = [{
     },
     {
         type: 'input',
-        name: 'github',
-        message: 'Enter this project\'s GitHub Username (Required) ',
-        validate: githubInput => {
-            if (githubInput) {
-                return true;
-            }
-            console.log('Please enter a GitHub username! ');
-            return false;
-        }
-    },
-    {
-        type: 'input',
         name: 'link',
         message: 'Enter a link to the project: (Required) ',
         validate: linkInput => {
             if (linkInput) {
                 return true;
             }
-            console.log('You need to enter a project GitHub link! ');
+            console.log('You need to enter a project link even if it\'s just the Github!');
+            return false;
+        }
+    },
+    {
+        type: 'input',
+        name: 'linkName',
+        message: 'Enter this project\'s site name (Required) ',
+        validate: linkInput => {
+            if (linkInput) {
+                return true;
+            }
+            console.log('Please enter a name for the link! ');
             return false;
         }
     },
