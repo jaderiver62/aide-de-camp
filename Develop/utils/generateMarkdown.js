@@ -16,11 +16,11 @@ const generateTableOfContents = tableOfContents => {
     }
     return `
 ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Credits](#credits)
-    `
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Credits](#credits)
+`
 }
 const generateContributors = credits => {
     var result = ``;
