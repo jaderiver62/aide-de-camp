@@ -1,10 +1,8 @@
 
-<<<<<<< HEAD
 # Aide de Camp
 
 license badges here: TO-DO
-=======
-# aide-de-camp
+
 ---------------------------------------
 
 
@@ -31,15 +29,8 @@ This is an app that generates a quality README.md document for projects using In
 Written using:
 
 * JavaScript
-
-
 * ES6
-
-
 * Node
-
-
-
 
 ## Installation
 
