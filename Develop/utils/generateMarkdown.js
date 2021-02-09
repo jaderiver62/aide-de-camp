@@ -15,13 +15,11 @@ const generateTableOfContents = tableOfContents => {
         return ``;
     }
     return `
-
-        ## Table of Contents
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [License](#license)
-        * [Credits](#credits)
-
+## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Credits](#credits)
     `
 }
 const generateContributors = credits => {
@@ -31,7 +29,7 @@ const generateContributors = credits => {
     }
     for (var i = 0; i < credits.length; i++) {
         result += `
-        [${projectData.contributor}](${projectData.contributorLink})
+        ![${projectData.contributor}](${projectData.contributorLink})
         `;
     }
     return result;
@@ -45,7 +43,7 @@ function generateMarkdown(projectData) {
     ## Description
     ${projectData.description}
 
-    [${projectData.github}](${projectData.link})`;
+   ![${projectData.github}](${projectData.link})`;
     output += `${generateTableOfContents(projectData.tableOfContents)}`;
 
     output += `## Installation
