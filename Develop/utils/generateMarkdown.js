@@ -1,7 +1,7 @@
-const thisMoment = require("moment");
+const moment = require("moment");
 
 function generateDate() {
-    return thisMoment.format("L");
+    return moment().format("L");
 
 } // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
