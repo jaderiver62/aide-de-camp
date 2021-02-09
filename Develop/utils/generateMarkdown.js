@@ -29,7 +29,7 @@ const generateContributors = credits => {
     }
     for (var i = 0; i < credits.length; i++) {
         result += `
-        ![${projectData.credits[i].contributor}](${projectData.credits[i].contributorLink})
+        ![${credits[i].contributor}](${credits[i].contributorLink})
         `;
     }
     return result;
