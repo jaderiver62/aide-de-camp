@@ -113,7 +113,7 @@ ${generateContributors(projectData.credits)}
 
 This project is licensed under the ${projectData.license}.
 
-${projectData.name}, &copy; 2021
+&copy; 2021 ${projectData.name}
 
 ---------------------------------------
 

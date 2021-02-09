@@ -80,7 +80,7 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 
 This project is licensed under the MIT License.
 
-Nina Cummings, &copy; 2021
+&copy; 2021 Nina Cummings
 
 ---------------------------------------
 
