@@ -43,13 +43,19 @@ function generateMarkdown(projectData) {
 # ${projectData.title}
 ## Description
 ${projectData.description}
-}
+
 [${projectData.github}](${projectData.link})
 ${generateTableOfContents(projectData.tableOfContents)}
 ## Installation
 
 ${projectData.installation}
+## Usage
 
+${projectData.usage}
+![Project Usage Image](${projectData.imageUrl})
+    
+## Credits
+${generateContributors(projectData.credits)} 
     `;
 }
 
