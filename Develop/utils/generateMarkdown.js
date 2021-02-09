@@ -12,9 +12,12 @@ function renderLicenseSection(license) {}
 const generateContributors = credits => {
     var result =
         ``;
+
     for (var i = 0; i < credits.length; i++) {
+        const contributor = credits[i].contributor;
+        const link = credits[i].contributorLink;
         result += `
-[` + credits[i].contributor + `]` + `(` + credits[i].contributorLink + `)
+[` + contributor + `]` + `(` + link + `)
 `;
     }
     return result;
