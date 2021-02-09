@@ -148,22 +148,6 @@ const questions = [{
 ];
 
 
-function writeToFile(fileName, data) {
-    return new Promise((resolve, reject) => {
-        fs.writeFile(fileName, data, err => {
-            if (err) {
-                reject(err);
-                return;
-            }
-
-            resolve({
-                ok: true,
-                message: 'File created!'
-            });
-        });
-    });
-}
-
 
 function init() {
     inquirer.prompt(questions).then((answers) => {
@@ -183,6 +167,24 @@ function init() {
 
         });
 }
+
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: 'File created!'
+            });
+        });
+    });
+}
+
+
 
 init();
 
