@@ -85,7 +85,9 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 ## Licence
 
 This project is licensed under the MIT License.
-&copy; 
+
+
+&copy; Nina Cummings
 
 ---------------------------------------
 

@@ -1,4 +1,9 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+const thisMoment = require("moment");
+
+function generateDate() {
+    return thisMoment.format("L");
+
+} // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
@@ -112,7 +117,8 @@ ${generateContributors(projectData.credits)}
 ## Licence
 
 This project is licensed under the ${projectData.license}.
-&copy; 
+
+&copy; ${projectData.name} ${generateDate()}
 
 ---------------------------------------
 
@@ -120,4 +126,3 @@ This project is licensed under the ${projectData.license}.
 }
 
 module.exports = generateMarkdown;
-//module.exports = templateData => {
