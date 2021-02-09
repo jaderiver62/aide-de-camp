@@ -53,7 +53,7 @@ const questions = [{
         }
     },
     {
-        type: 'editor',
+        type: 'input',
         name: 'description',
         message: 'Please provide some information about this project for the README: ',
         validate: descriptionInput => {
@@ -70,7 +70,7 @@ const questions = [{
         message: 'Would you like to include a Table of Contents? ',
     },
     {
-        type: 'editor',
+        type: 'input',
         name: 'installation',
         message: 'Please provide any installation information you wish to include: '
     },
@@ -125,7 +125,7 @@ const questions = [{
         }
     },
     {
-        type: 'editor',
+        type: 'input',
         name: 'test',
         message: 'Please provide any testing information you wish to include: '
     },
@@ -151,14 +151,8 @@ const questions = [{
 
 function init() {
     inquirer.prompt(questions).then((answers) => {
-            var data = JSON.stringify(answers, null, '  ');
-            console.log(data);
-            return data;
-        }).then(projectData => {
-            return generateREADME(projectData);
-        })
-        .then(thisMarkdown => {
-            return writeToFile('./README.md', thisMarkdown);
+            const myREADME = generateREADME(answers);
+            return writeToFile('./README.md', myREADME);
         }).then(writeFileResponse => {
             console.log(writeFileResponse);
         })
