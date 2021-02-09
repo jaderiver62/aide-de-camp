@@ -17,14 +17,14 @@ This is an app that generates a quality README.md document for projects using In
 
 
 ## Table of Contents
----------------------------------------
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Testing](#testing)
 * [Credits](#credits)
 
-
+---------------------------------------
 
 Written using:
 
@@ -32,9 +32,13 @@ Written using:
 * ES6
 * Node
 
+---------------------------------------
+
 ## Installation
 
 Our project is quite easy to install at the moment.  You must have installed Node.js - (https://nodejs.org/)  and npm- (https://www.npmjs.com/) to use aide-de-camp.  For future endeavors aide-de-camp plans to publish a package on npm that makes this process even easier!
+
+---------------------------------------
 
 ## Usage
 
@@ -51,6 +55,8 @@ Clone the repository, and open it in your IDE.  Once you have the cloned the fil
 
 Included within the aide-de-camp files is a tester folder.  To test out input, first navigate to the aide-de-camp files in the command line and enter: ' node Develop/utils/tests/sample.js '.  the object created by your input should print in the console log, along with the created Markdown code for the newly created README.md file.
 
+---------------------------------------
+
 ## Credits
 
 
@@ -62,14 +68,13 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 
 * [inquirer-loop](https://github.com/ckoliber/inquirer-loop)
 
-* [npm]((https://www)
+* [npm](https://www.npmjs.com/)
 
 * [node.js](https://nodejs.org/)
 
 * [GitHub](https://github.com/)
  
-
-
+---------------------------------------
 
 ## Licence
 

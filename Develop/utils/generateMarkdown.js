@@ -42,12 +42,14 @@ const generateTableOfContents = tableOfContents => {
     }
     return `
 ## Table of Contents
----------------------------------------
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Testing](#testing)
 * [Credits](#credits)
+
+---------------------------------------
 
 `
 }
@@ -67,19 +69,23 @@ ${projectData.description}
 
 ---------------------------------------
 
-* Project Link: 
+Project Link: 
 [${projectData.linkName}](${projectData.link})
 
+---------------------------------------
 
 ${generateTableOfContents(projectData.tableOfContents)}
 
 Written using:
 ${generateLanguages(projectData.languages)}
 
+---------------------------------------
 
 ## Installation
 
 ${projectData.installation}
+
+---------------------------------------
 
 ## Usage
 
@@ -95,10 +101,13 @@ ${projectData.usage}
 
 ${projectData.test}
 
+---------------------------------------
+
 ## Credits
 
 ${generateContributors(projectData.credits)} 
 
+---------------------------------------
 
 ## Licence
 
@@ -106,6 +115,7 @@ This project is licensed under the ${projectData.license}.
 &copy; 
 
 ---------------------------------------
+
     `;
 }
 
