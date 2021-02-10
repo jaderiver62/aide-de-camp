@@ -139,7 +139,10 @@ ${projectData.installation}
 ---------------------------------------
 
 ## Usage
+
+
 ${projectData.usage}
+
 ![Project Usage Image](${projectData.imageUrl})
 
 ---------------------------------------
