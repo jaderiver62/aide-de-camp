@@ -44,7 +44,7 @@ function renderLicenseLink(license) {
         } else if (license === "Boost Software License 1.0") {
             link = "https://www.boost.org/LICENSE_1_0.txt";
         } else if (license === "The Unlicense") {
-            link = "https://unlicense.orghttps://unlicense.org";
+            link = "https://unlicense.org";
         }
         result = link;
     }
