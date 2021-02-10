@@ -87,7 +87,7 @@ const generateContributors = credits => {
         const contributor = credits[i].contributor;
         const link = credits[i].contributorLink;
         result += ` 
-*[${contributor}](${link})
+* [${contributor}](${link})
                     `;
     }
     return result;
