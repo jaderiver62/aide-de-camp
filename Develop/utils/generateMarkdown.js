@@ -91,7 +91,7 @@ function generateMarkdown(projectData) {
     return `
 # ${projectData.title}
 
-${renderLicenseBadge(projectData.license)}
+${renderLicenseSection(projectData.license)}
 
 ---------------------------------------
 
