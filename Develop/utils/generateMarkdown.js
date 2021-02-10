@@ -1,11 +1,11 @@
 function renderLicenseBadge(license) {
 
-    var imageLink = "https: //img.shields.io/badge/LICENSE-" + license + "-blueviolet?style=plastic";
-    return "<img src=" + imageLink + "imageLink alt='license badge'>";
+    var imageLink = "https://img.shields.io/badge/license-" + license + "-blueviolet?style=plastic'";
+    return "<img src='" + imageLink + "imageLink alt='license badge'>";
 }
 
 function renderLicenseLink(license) {
-    var result = ``;
+    var result = "";
     if (license) {
         var link = "";
         if (license === "GNU AGPLv3") {
@@ -38,9 +38,9 @@ function renderLicenseSection(license) {
     if (license) {
         var badgeImageLink = renderLicenseBadge(license);
         var badgeLink = renderLicenseLink(license);
-        return "a href='" + badgeLink + "'>" + badgeImageLink + "</a>";
+        return "<a href='" + badgeLink + "'>" + badgeImageLink + "</a>";
     }
-    return ``;
+    return "";
 }
 
 
@@ -147,7 +147,7 @@ ${generateContributors(projectData.credits)}
 
 ## Licence
 
-This project is licensed under the ${renderLicenseSection(projectData.license)}.
+This project is licensed under the ${projectData.license}.
 
 &copy; 2021 ${projectData.name}
 
