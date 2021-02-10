@@ -36,7 +36,8 @@ Written using:
 ---------------------------------------
 
 ## Installation
-Our project is quite to install at the moment. You must have Node.js - (https://nodejs.org/) and npm- (https://www.npmjs.com/) installed to use aide-de-camp. For future endeavors aide-de-camp plans to publish a package on npm that makes this process even easier.
+
+Our project is quite easy to install at the moment. You must have Node.js - (https://nodejs.org/) and npm- (https://www.npmjs.com/) installed to use aide-de-camp. For future endeavors aide-de-camp plans to publish a package on npm that makes this process even easier.
 ---------------------------------------
 
 ## Usage
