@@ -1,7 +1,27 @@
 function renderLicenseBadge(license) {
-
-    var imageLink = "https://img.shields.io/badge/license-" + license + "-blueviolet?style=plastic'";
-    return "<img src='" + imageLink + "imageLink alt='license badge'>";
+    if (license) {
+        var imageLink = "";
+        if (license === "GNU AGPLv3") {
+            imageLink = "https://img.shields.io/badge/license-GNU%20AGPLv3-green";
+        } else
+        if (license === "GNU GPLv3") {
+            imageLink = "https://img.shields.io/badge/license-GNU%20GPLv3-brightgreen";
+        } else if (license === "GNU LGPLv3") {
+            imageLink = "https://img.shields.io/badge/license-GNU%20LGPLv3-orange";
+        } else if (license === "Mozilla Public License 2.0") {
+            imageLink = "https://img.shields.io/badge/license-Mozilla%20Public%20License%202.0-blue";
+        } else if (license === "Apache License 2.0") {
+            imageLink = "https://img.shields.io/badge/license-Apache%20License%202.0-blueviolet";
+        } else if (license === "MIT License") {
+            imageLink = "https://img.shields.io/badge/license-MIT-blueviolet";
+        } else if (license === "Boost Software License 1.0") {
+            imageLink = "https://img.shields.io/badge/license-Boost%20Software%20License%201.0-ff69b4";
+        } else if (license === "The Unlicense") {
+            imageLink = "https://img.shields.io/badge/license-The%20Unlicense-9cf";
+        }
+        return "<img src='" + imageLink + "' alt='license badge'>";
+    }
+    return "";
 }
 
 function renderLicenseLink(license) {

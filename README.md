@@ -1,7 +1,7 @@
 
 # Aide de Camp
 
-<a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/license-MIT License-blueviolet?style=plastic'imageLink alt='license badge'></a>
+<a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/license-MIT-blueviolet' alt='license badge'></a>
 
 ---------------------------------------
 
@@ -30,12 +30,6 @@ Project Link:
 
 
 Written using:
-
-* JavaScript
-
-* HTML
-
-* Node
 
 
 ---------------------------------------
