@@ -63,24 +63,25 @@ First navigate to the aide-de-camp files in the command line and enter: ' node D
 Example of tester input:
 
 >
->  name: 'Nina Cummings',
->  title: 'aide-de-camp',
->  link: 'https://github.com/jaderiver62/aide-de-camp',
->  linkName: 'Aide de Camp (GitHub)',
->  description: "This is an app that generates a quality README.md document for projects  using  Inquirer  in  the  command  line.  There  	
->  are many options for input  possible, whether  the  README.md  is  long  or  concise.  Using  aide-de-camp ...
+>  name: 'Your Name',
+>
+>  title: 'Title',
+>
+>  link: 'your-link',
+>
+>  linkName: 'link-name',
+>
+>  description: "Your description here!"
 >
 
 Example of tester output:
 
 >
->  # aide-de-camp
+>  # Title
 > 
 >  ---------------------------------------
 >  ## Description
->  This is an app that generates a quality README.md document for projects  using 
->  Inquirer  in  the  command  line.  There  are  many  options for  input  possible, whether  
->  the  README.md  is  long  or  concise.  Using  aide-de-camp  ensures  
+>  Your description here! 
 
 ---------------------------------------
 
