@@ -63,30 +63,32 @@ function renderLicenseSection(license) {
     return "";
 }
 
-
 const generateLanguages = (languageArray) => {
     var result =
-        ``;
-
-    for (var i = 0; i < languageArray.length; i++) {
-        const language = languageArray[i];
-        result += `
-* ${language}
-`;
+        `
+                    `;
+    if (languageArray) {
+        for (var i = 0; i < languageArray.length; i++) {
+            const language = languageArray[i];
+            result += `
+*${language}
+   `;
+        }
     }
     return result;
 };
 
 const generateContributors = credits => {
     var result =
-        ``;
+        `
+                    `;
 
     for (var i = 0; i < credits.length; i++) {
         const contributor = credits[i].contributor;
         const link = credits[i].contributorLink;
-        result += `
-* [${contributor}](${link})
-`;
+        result += ` 
+*[${contributor}](${link})
+                    `;
     }
     return result;
 };
@@ -96,15 +98,12 @@ const generateTableOfContents = tableOfContents => {
     }
     return `
 ## Table of Contents
-
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Testing](#testing)
 * [Contributions](#contributions)
-
 ---------------------------------------
-
 `
 }
 
@@ -114,13 +113,11 @@ function generateMarkdown(projectData) {
     console.log(projectData);
     return `
 # ${projectData.title}
-
 ${renderLicenseSection(projectData.license)}
 
 ---------------------------------------
 
 ## Description
-
 ${projectData.description}
 
 ---------------------------------------
@@ -131,48 +128,37 @@ Project Link:
 ---------------------------------------
 
 ${generateTableOfContents(projectData.tableOfContents)}
-
 Written using:
 ${generateLanguages(projectData.languages)}
 
 ---------------------------------------
 
 ## Installation
-
 ${projectData.installation}
 
 ---------------------------------------
 
 ## Usage
-
 ${projectData.usage}
-
 ![Project Usage Image](${projectData.imageUrl})
 
 ---------------------------------------
 
-
-
 ## Testing
-
 ${projectData.test}
 
 ---------------------------------------
 
 ## Contributions
-
 ${generateContributors(projectData.credits)} 
 
 ---------------------------------------
 
 ## Licence
-
 This project is licensed under the [${projectData.license}](${renderLicenseLink(projectData.license)}).
-
 &copy; 2021 ${projectData.name}
 
 ---------------------------------------
-
     `;
 }
 
