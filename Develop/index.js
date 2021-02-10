@@ -128,11 +128,11 @@ const questions = [{
         type: 'input',
         name: 'githubLink',
         message: 'Enter a GitHub link for the project\'s contact: ',
-        validate: emailInput => {
-            if (validator.validate(emailInput)) {
+        validate: nameInput => {
+            if (nameInput) {
                 return true;
             } else {
-                console.log('Please enter a Git Hub Link!');
+                console.log('Please enter a GitHub link!');
                 return false;
             }
         }
