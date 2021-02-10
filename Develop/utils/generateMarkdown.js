@@ -160,7 +160,7 @@ ${generateContributors(projectData.credits)}
 
 ## Questions
 
-For any input, concerns, bugs or questions please get in touch!  Simply reach out to [${projectData.contactName}](${githubLink}) via GitHub or via e-mail: ${email}.
+For any input, concerns, bugs or questions please get in touch!  Simply reach out to [${projectData.contactName}](${projectData.githubLink}) via GitHub or via e-mail: ${email}.
 
 ---------------------------------------
 
