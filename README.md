@@ -7,12 +7,14 @@
 ## Description
 
 This is an app that generates a quality README.md document for projects using Inquirer in the command line.  
-There are many options for input possible whether the README.md is long or concise.  Using aide-de-camp ensures that the project's 
-README.md looks great and is not at all anemic!  
+There are many options for input possible whether the README.md is long or concise.
+Using aide-de-camp ensures that the project's README.md is off to a strong start!  
 
-In the future, theses options will be enhanced and improved even more, so please see the questions section for our contact information.
+We plan to keep enhancing and improving these features even more in the future.
 
-If you encounter any bugs have any questions at all or input as to how the UI can be made more helpful - we would love to hear it.
+If you encounter any bugs have any questions at all or input as to how the UI can be made more helpful - we would love to hear it!
+
+Please see the [questions](#questions) section for our contact information.
 
 ---------------------------------------
 
