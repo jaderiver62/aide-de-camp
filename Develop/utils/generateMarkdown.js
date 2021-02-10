@@ -129,8 +129,7 @@ Project Link:
 ---------------------------------------
 
 ${generateTableOfContents(projectData.tableOfContents)}
-Written using:
-${generateLanguages(projectData.languages)}
+
 
 ---------------------------------------
 
@@ -150,6 +149,11 @@ ${projectData.usage}
 
 ## Testing
 ${projectData.test}
+
+---------------------------------------
+
+Written using:
+${generateLanguages(projectData.languages)}
 
 ---------------------------------------
 

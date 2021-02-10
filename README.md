@@ -33,17 +33,6 @@ Project Link:
 * [Contributions](#contributions)
 ---------------------------------------
 
-Written using:
-
-                    
-* JavaScript
-* HTML
-* ES6 
-* jQuery
-* Node
-   
-
----------------------------------------
 
 ## Installation
 Our project is quite to install at the moment.  You must have Node.js - (https://nodejs.org/)  and npm- (https://www.npmjs.com/) installed to use aide-de-camp.  For future endeavors aide-de-camp plans to publish a package on npm that makes this process even easier. 
@@ -63,6 +52,18 @@ Clone the repository, and open it in your IDE.  Using aide-de-camp is very strai
 
 ## Testing
 Included within the aide-de-camp files is a tester folder.  To test out input, first navigate to the aide-de-camp files in the command line and enter: ' node Develop/utils/tests/sample.js '.  The object created by your input should print in the console log, along with the created Markdown code for the newly created README.md file.
+
+---------------------------------------
+
+Written using:
+
+                    
+* JavaScript
+* HTML
+* ES6 
+* jQuery
+* Node
+   
 
 ---------------------------------------
 
