@@ -78,7 +78,7 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 
 ## Questions
 
-For any input, concerns, bugs or questions please get in touch!  Simply reach out to [Nina](https://github.com/jaderiver62/) via GitHub or via e-mail: <jaderiver64@gmail.com>.
+For any input, concerns, bugs or questions please get in touch!  Simply reach out to [Nina via GitHub](https://github.com/jaderiver62/) or via e-mail: <jaderiver64@gmail.com>.
 
 ---------------------------------------
 
