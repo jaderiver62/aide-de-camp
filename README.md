@@ -1,7 +1,7 @@
 
 # Aide de Camp
 
-[![MIT License](![license badge](https://img.shields.io/badge/license-MIT License-blueviolet?style=plastic)"MIT License")][https://opensource.org/licenses/MIT]
+<a href='https://opensource.org/licenses/MIT'><img src=https: //img.shields.io/badge/LICENSE-MIT License-blueviolet?style=plasticimageLink alt='license badge'></a>
 
 ---------------------------------------
 
@@ -12,7 +12,7 @@ This is an app that generates a quality README.md document for projec
 ---------------------------------------
 
 Project Link: 
-[jaderiver62](https://github.com/jaderiver62/aide-de-camp)
+[Jaderiver62](https://github.com/jaderiver62/aide-de-camp)
 
 ---------------------------------------
 
@@ -33,6 +33,8 @@ Written using:
 
 * JavaScript
 
+* HTML
+
 * ES6
 
 * Node
@@ -51,7 +53,6 @@ Our project is quite to install at the moment.  You must have Node.js - (https:/
 Clone the repository, and open it in your IDE.  Using aide-de-camp is very straight-forward.  Once you have the cloned the files, in the command line navigate to the cloned aide-de-camp folder.  Once there, enter ' node Develop/index ' to run the code.  You will be prompted with a series of questions, some are required and some are optional – but when you are done a new README.md file will be generated in the aide-de-camp folder.  This README.md file can be copied and placed in your project folder and even altered further if you wish – but for now, the majority of the work will be done!   NOTE: this will replace the aide-de-camp README.md file, but you can still access this at our GitHub: https://github.com/jaderiver62/aide-de-camp
 
 ![Project Usage Image](Develop/utils/tests/images/screenshot1.jpg)
-![Project Usage Image](Develop/utils/tests/images/screenshot2.jpg)
 
 ---------------------------------------
 
@@ -75,7 +76,7 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 
 ## Licence
 
-This project is licensed under the [![MIT License](![license badge](https://img.shields.io/badge/license-MIT License-blueviolet?style=plastic)"MIT License")][https://opensource.org/licenses/MIT].
+This project is licensed under the <a href='https://opensource.org/licenses/MIT'><img src=https: //img.shields.io/badge/LICENSE-MIT License-blueviolet?style=plasticimageLink alt='license badge'></a>.
 
 &copy; 2021 Nina Cummings
 
