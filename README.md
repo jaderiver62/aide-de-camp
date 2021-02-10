@@ -1,7 +1,7 @@
 
 # Aide de Camp
 
-<a href='https://opensource.org/licenses/MIT'><img src='https: //img.shields.io/badge/LICENSE-MIT License-blueviolet?style=plasticimageLink' alt='license badge'></a>
+<a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/LICENSE-MIT-License-blueviolet?style=plasticimageLink' alt='license badge'></a>
 
 ---------------------------------------
 
@@ -76,7 +76,7 @@ Included within the aide-de-camp files is a tester folder.  To test out input, f
 
 ## Licence
 
-This project is licensed under the <a href='https://opensource.org/licenses/MIT'><img src='https: //img.shields.io/badge/LICENSE-MIT License-blueviolet?style=plasticimageLink' alt='license badge'></a>.
+This project is licensed under the <a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/LICENSE-MIT-License-blueviolet?style=plasticimageLink' alt='license badge'></a>.
 
 &copy; 2021 Nina Cummings
 
