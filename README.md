@@ -27,11 +27,11 @@ Project Link:
 Written using:
 
                     
-*JavaScript                  
-*HTML                 
-*ES6                
-*jQuery                 
-*Node
+* JavaScript                  
+* HTML                 
+* ES6                
+* jQuery                 
+* Node
                     
 ---------------------------------------
 

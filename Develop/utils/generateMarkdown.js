@@ -71,7 +71,7 @@ const generateLanguages = (languageArray) => {
         for (var i = 0; i < languageArray.length; i++) {
             const language = languageArray[i];
             result += `
-*${language}
+* ${language}
    `;
         }
     }
