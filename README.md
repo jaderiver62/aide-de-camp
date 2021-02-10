@@ -53,7 +53,34 @@ Check out this short video for a preview of aide-de-camp in action: [aide-de-cam
 ---------------------------------------
 
 ## Testing
-Included within the aide-de-camp files is a tester folder.  To test out input, first navigate to the aide-de-camp files in the command line and enter: ' node Develop/utils/tests/sample.js '.  The object created by your input should print in the console log, along with the created Markdown code for the newly created README.md file.
+
+Included within the aide-de-camp files is a tester folder.  
+
+To test out input, you can change the values in sample-ansswer.js to suit your tests, or you can leave them as the are and see what happens!
+
+First navigate to the aide-de-camp files in the command line and enter: ' node Develop/utils/tests/sample.js '.  The object created by your input should print in the console log, along with the created Markdown code for the newly created README.md file.
+
+Example of tester input:
+
+>
+>  name: 'Nina Cummings',
+>  title: 'aide-de-camp',
+>  link: 'https://github.com/jaderiver62/aide-de-camp',
+>  linkName: 'Aide de Camp (GitHub)',
+>  description: "This is an app that generates a quality README.md document for projects  using  Inquirer  in  the  command  line.  There  	
+>  are many options for input  possible, whether  the  README.md  is  long  or  concise.  Using  aide-de-camp ...
+>
+
+Example of tester output:
+
+>
+>  # aide-de-camp
+> 
+>  ---------------------------------------
+>  ## Description
+>  This is an app that generates a quality README.md document for projects  using 
+>  Inquirer  in  the  command  line.  There  are  many  options for  input  possible, whether  
+>  the  README.md  is  long  or  concise.  Using  aide-de-camp  ensures  
 
 ---------------------------------------
 
@@ -89,7 +116,9 @@ For any input, concerns, bugs or questions please get in touch!  Simply reach ou
 
 
 #### This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-#### &copy; 2021 Nina Cummings
+#### &copy; 2021 Nina Cummings 
 
 ---------------------------------------
+
+
     
