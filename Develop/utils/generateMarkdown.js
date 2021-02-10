@@ -1,30 +1,34 @@
 function renderLicenseBadge(license) {
 
-    return `![license badge](https://img.shields.io/badge/license-${license}-blueviolet?style=plastic)`
+    var imageLink = "https: //img.shields.io/badge/LICENSE-" + license + "-blueviolet?style=plastic";
+    return "<img src=" + imageLink + "imageLink alt='license badge'>";
 }
 
 function renderLicenseLink(license) {
+    var result = ``;
     if (license) {
+        var link = "";
         if (license === "GNU AGPLv3") {
-            return `https://www.gnu.org/licenses/agpl-3.0.html`;
-        } else if (license === "GNU GPLv3") {
-            return `https://www.gnu.org/licenses/gpl-3.0.html`;
+            link = "https://www.gnu.org/licenses/agpl-3.0.html";
+        } else
+        if (license === "GNU GPLv3") {
+            link = "https://www.gnu.org/licenses/gpl-3.0.html";
         } else if (license === "GNU LGPLv3") {
-            return `https://www.gnu.org/licenses/lgpl-3.0.html`;
+            link = "https://www.gnu.org/licenses/lgpl-3.0.html";
         } else if (license === "Mozilla Public License 2.0") {
-            return `https://www.mozilla.org/en-US/MPL/2.0/`;
+            link = "https://www.mozilla.org/en-US/MPL/2.0/";
         } else if (license === "Apache License 2.0") {
-            return `http://www.apache.org/licenses/LICENSE-2.0`;
+            link = "http://www.apache.org/licenses/LICENSE-2.0";
         } else if (license === "MIT License") {
-            return `https://opensource.org/licenses/MIT`;
+            link = "https://opensource.org/licenses/MIT";
         } else if (license === "Boost Software License 1.0") {
-            return `https://www.boost.org/LICENSE_1_0.txt`;
+            link = "https://www.boost.org/LICENSE_1_0.txt";
         } else if (license === "The Unlicense") {
-            return `https://unlicense.orghttps://unlicense.org`;
+            link = "https://unlicense.orghttps://unlicense.org";
         }
-
+        result = link;
     }
-    return ``;
+    return result;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -34,7 +38,7 @@ function renderLicenseSection(license) {
     if (license) {
         var badgeImageLink = renderLicenseBadge(license);
         var badgeLink = renderLicenseLink(license);
-        return `[![${license}](${badgeImageLink}"${license}")][${badgeLink}]`;
+        return "a href='" + badgeLink + "'>" + badgeImageLink + "</a>";
     }
     return ``;
 }
