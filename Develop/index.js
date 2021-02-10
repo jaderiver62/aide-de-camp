@@ -36,7 +36,7 @@ const questions = [{
             if (linkInput) {
                 return true;
             }
-            console.log('You need to enter a project link even if it\'s just the Github!');
+            console.log('Please enter a project link!');
             return false;
         }
     },
@@ -84,7 +84,7 @@ const questions = [{
     {
         type: 'checkbox',
         name: 'languages',
-        message: 'What did you write this project with? (Check all that apply)',
+        message: 'What languages did you write this project with? (Check all that apply)',
         choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
     },
     {
@@ -120,6 +120,19 @@ const questions = [{
                 return true;
             } else {
                 console.log('You need to enter a valid contact e-mail!');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'githubLink',
+        message: 'Enter a GitHub link for the project\'s contact: ',
+        validate: emailInput => {
+            if (validator.validate(emailInput)) {
+                return true;
+            } else {
+                console.log('Please enter a Git Hub Link!');
                 return false;
             }
         }

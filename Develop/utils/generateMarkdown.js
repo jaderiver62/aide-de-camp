@@ -102,6 +102,7 @@ const generateTableOfContents = tableOfContents => {
 * [Usage](#usage)
 * [License](#license)
 * [Testing](#testing)
+* [Questions](#questions)
 * [Contributions](#contributions)
 ---------------------------------------
 `
@@ -154,6 +155,12 @@ ${projectData.test}
 
 ## Contributions
 ${generateContributors(projectData.credits)} 
+
+---------------------------------------
+
+## Questions
+
+For any input, concerns, bugs or questions please get in touch!  Simply reach out to [${projectData.contactName}](${githubLink}) via GitHub or via e-mail: ${email}.
 
 ---------------------------------------
 
